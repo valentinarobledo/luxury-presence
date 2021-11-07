@@ -1,0 +1,12 @@
+@mixin toAnim ($tempo){
+  -webkit-transition: all $tempo ease-in-out;
+  -moz-transition: all $tempo ease-in-out;
+  -o-transition: all $tempo ease-in-out;
+  transition: all $tempo ease-in-out;
+}
+
+@mixin bg($h){
+  background-size: cover;
+  background-position: center;
+  height: $h;
+}
