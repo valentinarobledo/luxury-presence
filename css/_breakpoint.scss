@@ -1,24 +1,98 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
   //48px
 h1{
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 //36px
 h2{
-  font-size: 2.25rem;
+  font-size: 1rem;
 }
 
 //24px
 h3{
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
 //18px
 p{
-  font-size: 1rem;
+  font-size: 0.6rem;
+}
+.only-desk{
+  display: none;
+}
+.only-mobile{
+  display: block;
+}
+.logo{
+  img{
+    width: 26vw;
   }
+}
+.banner-parallax{
+  min-height: 40vh;
+  .swiper {
+    .swiper-slide{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+header {
+  .nav {
+    input:checked ~ .menu {
+      width: 80vw;
+    }
+   .menu{
+     li{
+       a{
+         font-size: 2.5vw;
+       }
+     }
+   } 
+   span{
+     width: 3.2vw;
+     left: 2.1vw;
+   }
+   input{
+     width: 6vw;
+     height: 6vw;
+     border-radius: 50%;
+   }
+  }
+}
+
+.app{
+  width: 100%;
+}
+
+footer{
+  .logo{
+    width: 40vw;
+  }
+  .redes{
+    a{
+      width: 8vw;
+      height: 8vw;
+      padding: 1.5vw;
+      margin: 0.5vw;
+      i{
+        font-size: 5vw;
+        color: black;
+      }
+    }
+  }
+  ul{
+    li{
+      p{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -71,7 +145,36 @@ h3{
   }
 
 }
+.cont{
+  height: 75vh;
+}
+.app__text{
+  right: 9%;
+  &--2{
+    top: 200px;
+    left: 10%;
+  }
+}
+.banner-parallax{
+  height: 40vh;
+}
 
+footer{
+  .logo{
+    width: 20vw;
+  }
+  .redes{
+    a{
+      width: 8vw;
+      height: 8vw;
+      margin: 0.5vw;;
+      i{
+        font-size: 1rem;
+        color: black;
+      }
+    }
+  }
+}
 
 }
 
@@ -108,6 +211,9 @@ p{
     }
  
   }
+  .banner-parallax{
+    height: 80vh;
+  }
 }
 
 
@@ -132,6 +238,9 @@ p{
   //18px
   p{
     font-size: 0.9vw;
+  }
+  .banner-parallax{
+    height: 80vh;
   }
 }
 
